@@ -7,7 +7,7 @@ const motivation = () => {
   const isInView = useInView(ref); // Destructure ref and inView from useInView()
 
   return (
-    <div className="bg-black flex justify-center items-center p-20">
+    <div className="bg-[#ffffff] flex justify-center items-center p-20">
       <div
         ref={ref}
         className="w-[90%] p-10 bg-[#e4e4e4] shadow-[rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset] rounded-2xl"
