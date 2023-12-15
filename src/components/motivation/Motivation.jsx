@@ -7,7 +7,7 @@ const motivation = () => {
   const isInView = useInView(ref); // Destructure ref and inView from useInView()
 
   return (
-    <div className="bg-[#ffffff] flex justify-center items-center flex-col p-20">
+    <div className="bg-[#ffffff] flex justify-center items-center flex-col p-3 lg:p-20 md:p-10 sx:p-5">
       <div
         ref={ref}
         className="w-[90%] p-10 bg-[#e4e4e4] shadow-[rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset] rounded-2xl"
@@ -20,7 +20,7 @@ const motivation = () => {
           : "none",
         }}
       >
-        <h1 className="text-black font-extrabold main-font lg:text-3xl md:text-2xl text-center">
+        <h1 className="text-black w-full font-extrabold main-font lg:text-3xl md:text-2xl text-center">
           <span className="text-[rgba(40,84,137,1)] lg:text-7xl md:text-xl">"</span>Since I
           have never worked with FHIR before, I have decided to show you how
           I learn alone and apply my knowledge. This project is only a simple
@@ -33,12 +33,12 @@ const motivation = () => {
           animate={isInView ? {opacity: [0,1]} : {opacity: 0}}
       >
         {/* explanation */}
-        <h1 className="py-3 text-[1.2rem] main-font">
+        <h1 className="py-3 text-[1.2rem] w-full text-center main-font">
           Patient data is fetched from:
           <a
             href="https://hapi.fhir.org/baseR4/Patient"
             target="_blank"
-            className="text-[rgba(40,84,137,1)] border border-black p-2 ml-3 rounded-md ease-in-out duration-200 hover:bg-purple-300"
+            className="text-[rgba(40,84,137,1)] border border-black p-2 ml-3 rounded-md  transition-all ease-in-out duration-500 hover:bg-black hover:text-white hover:p-1.5 hover:opacity-90"
           >
             HERE
           </a>
